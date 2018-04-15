@@ -1,0 +1,408 @@
+*{
+	box-sizing: border-box;
+	-webkit-transition-property: all;
+	-webkit-transition-duration: 0.5s;
+	-webkit-transition-timing-function: ease;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 80px;
+	cursor: url("pctrs/cursor.png"), pointer;
+}
+
+@font-face {
+    font-family: "Chicago_title";
+    src: url("fonts/Code Pro Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Chicago_lead";
+    src: url("fonts/Code Pro Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Chicago_text";
+    src: url("fonts/Code Pro.otf") format("opentype");
+}
+
+body {
+	text-align: center;
+	overflow-x: hidden;
+	font-family: "Chicago_text";
+}
+
+._center{
+	text-align: center;
+}
+
+._left{
+/*	width: 100%;*/
+	margin: 0;
+	text-align: left;
+	padding-right: 25vw;
+	padding-left: 5vw;
+/*	width: 75vw;*/
+}
+
+._right{
+/*	float: right;*/
+	width: 70%;
+	margin: 0;
+	text-align: right;
+	padding-right: 5vw;
+/*	width: 75vw;*/
+}
+
+.skew{
+	transform: skewY(-4.5deg);
+}
+
+h1{
+	margin: 0, auto;
+/*	padding-left: 10vw;*/
+/*	padding-right: 10vw;*/
+	padding-top: 7%;
+	padding-bottom: 5%;
+	font-size: 1.25em;
+	line-height: 1.1em;
+	font-family: "Chicago_title";
+	width: 30%;
+}
+
+h2{
+	z-index: 5;
+/*	width: 100%;*/
+	margin: 0, auto;
+	padding-left: 10vw;
+	padding-right: 10vw;
+	padding-top: 7vh;
+	padding-bottom: 7vh;
+	font-size: 5vw;
+	line-height: 1.1em;
+	letter-spacing: 0.2em;
+	font-family: "Chicago_lead";
+	background: linear-gradient(45deg, rgba(255,0,134,1) 70%, rgba(255,0,134,0) 70%)
+}
+h2:hover{
+	transform: skewY(-4.5deg);
+}
+
+h3{
+	margin: 0, auto;
+	padding-left: 10vw;
+	padding-right: 10vw;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+	letter-spacing: 0.2em;
+	font-size: 4vw;
+/*	font-size: 0.9em;*/
+	line-height: 1.1em;
+	font-family: "Chicago_text";
+}
+h3:hover{
+	color:rgba(255,0,134,1);
+}
+
+h4{
+	margin: 0, auto;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+	/* font-size: 0.6em; */
+	line-height: 1.5em;
+/*	letter-spacing: 0.1em;*/
+	font-family: "Chicago_lead";
+}
+
+h5{
+	width: 100%;
+	background: linear-gradient(-135deg, rgba(255,228,0,0) 50%, rgba(255,228,0,1) 50%);
+	margin: 0, auto;
+/*	padding-left: 10vw;
+	padding-right: 10vw;*/
+	padding-top: 6vh;
+	padding-bottom: 6vh;
+	font-size: 0.5em;
+	line-height: 1.1em;
+	letter-spacing: 0.1em;
+	font-family: "Chicago_title";
+}
+
+h5:hover{
+/*	background: linear-gradient(135deg, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 50%);*/
+}
+
+h6{
+	font-size: 20px;
+	font-family: "Chicago_text";
+	float: right;
+	display: inline-block;
+	/* padding-left: 5vw; */
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+p{
+	margin: 0 auto;
+	padding-left: 2%;
+	padding-right: 2%;
+	max-width: 1000px;
+	padding-top: 5vh;
+	padding-bottom: 10vh;
+	font-size: 0.5em;
+	line-height: 1.5em;
+	font-family: "Chicago_text";
+}
+
+#head{
+	width: 100%;
+	text-align: right;
+	position: fixed;
+	z-index: 11;
+	/* background: white; */
+}
+
+.a{
+	padding-left: 10vw;
+	padding-right: 10vw;
+/*	background: rgba(255,0,134,1);*/
+	padding-top: 5vh;
+	padding-bottom: 10vh;
+}
+
+.q{
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+	transform: skewY(-4.5deg);
+/*	padding-left: 10vw;
+	padding-right: 10vw;*/
+	background: rgba(255,0,134,1);
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+}
+.q:hover{
+	transform: skewY(0);
+	background: rgba(255,228,0,1);
+	color: rgba(255,0,134,1);
+}
+.a:hover{
+	color: rgba(255,0,134,1);
+}
+
+div{
+	width: 100%;
+	height: auto;
+}
+
+
+#conditions{
+/*	background: url("pctrs/imgs/welcome.jpg");*/
+	padding-top: 20vh;
+	padding-bottom: 20vh;
+}
+
+#welcome{
+	width: 100vw;
+	min-height: 100vh;
+	height: auto;
+	background: url("pctrs/imgs/welcome.jpg");
+	background-size: cover;
+}
+
+
+.third {
+		width: 33.33%;
+    float: left;
+/*    padding-left: 5%;
+    padding-right: 5%;	*/
+    background: red;
+}
+/*
+.raz{
+	position: relative;
+	left: 0;
+	width: 33.33%;
+}
+.dva{
+	position: relative;
+	margin: 0 auto;
+	width: 33.33%;
+}
+.raz{
+	position: relative;
+	right: 0;
+	width: 33.33%;
+} */
+
+
+.standart{
+	background: linear-gradient(45deg, #eae9e4, #e1dbd1, #d7cec0, #e6e3da, #cbc0b2, #fffef8, #e2dfd8, #dad2c9, #f6efe7);
+	margin: 0, auto;
+	width: 100vw;
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+	padding-left: 10vw;
+	padding-right: 10vw;
+	min-height: 100vh;
+	height: auto;
+}
+
+#open{
+	background: black;
+	color: white;
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+}
+
+#masters{
+	padding-bottom: 10vh;
+	padding-top: 10vh;
+	background: url("pctrs/imgs/masters.jpg");
+/*	background-position: -20vw 0;*/
+	background-size: 130%;
+	background-position: 280% 20%;
+	color: white;
+	margin: 0, auto;
+	padding-left: 10vw;
+	padding-right: 10vw;
+	letter-spacing: 0.1em;
+}
+
+#masters:hover{
+	background-size: 140%;
+	background-position: 130% -20%;
+}
+
+#materials{
+	height: 40vh;
+	width: 100vw;
+	background: url("pctrs/imgs/materials.jpg");
+	background-position: -50% 30%;
+	background-size: 70%;
+}
+#materials:hover{
+	background-size: 30%;
+	margin-bottom: 10vh;
+	transform: skewY(-4.5deg);
+}
+
+#profits{
+	width: 100vw;
+}
+
+#salon{
+	padding-top: 15vh;
+	padding-bottom: 15vh;
+}
+
+.half {
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+    float: left;
+/*    padding-left: 5%;
+    padding-right: 5%;	*/
+    background: white;
+}
+.third {
+		width: 33.33%;
+    float: left;
+/*    padding-left: 5%;
+    padding-right: 5%;	*/
+    background: red;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.half:hover{
+/*	transform: scale(0.9);*/
+	background: #ffe400;
+}
+
+.lend{
+	padding-top: 10vh;
+	padding-bottom: 20vh;
+}
+
+#qa{
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+input{
+	margin-top: 40px;
+/*	width: 30%;*/
+	padding: 10px;
+	text-align: center;
+}
+
+br{
+	line-height: 2em;
+}
+
+#button{
+	margin-top: 1vh;
+	background: white;
+	width: 200px;
+	font-family: "Chicago_text";
+	font-size: 30px;
+	border: 0;
+/*	transform: skewY(-4.5deg);*/
+}
+
+b{
+	font-size: 1em;
+	font-weight: bold;
+	color: linear-gradient(45deg, black, grey);
+	font-family: "Chicago_title";
+}
+
+b:hover{
+	color: rgba(255,0,134,1);
+}
+
+i{
+	font-size: 1em;
+   color: transparent;
+   text-shadow: 0 0 20px rgba(0,0,0,0.7);
+}
+
+@media (orientation:portrait){
+	.half{
+		width: 100%;
+	}
+	h4{
+		font-size: 32px;
+		line-height: 42px;
+	}
+	p{
+		font-size: 24px;
+		line-height: 30px;
+	}
+	h5{
+		font-size: 28px;
+		line-height: 36px;
+	}
+}
+@media (orientation:landscape) {
+	.half{
+		width: 50%;
+	}
+	h4{
+		font-size: 40px;
+		line-height: 46px;
+	}
+	p{
+		font-size: 28px;
+		line-height: 34px;
+	}
+	h5{
+		font-size: 36px;
+		line-height: 42px;
+	}
+}
