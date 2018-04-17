@@ -37,13 +37,27 @@ body {
 
 ._left{
 /*	width: 100%;*/
-	margin: 0;
 	text-align: left;
-	padding-right: 25vw;
-	padding-left: 5vw;
+	padding-right: 10%;
+	padding-left: 10%;
 /*	width: 75vw;*/
 }
 
+.s_left{
+	text-align: left;
+	padding-right: 15%;
+	padding-left: 10%;
+}
+.m_left{
+	text-align: left;
+	padding-right: 10%;
+	padding-left: 15%;
+}
+.x_left{
+	text-align: left;
+	padding-left: 30%;
+	padding-right: 20%;
+}
 ._right{
 /*	float: right;*/
 	width: 70%;
@@ -58,11 +72,14 @@ body {
 }
 
 h1{
-	margin: 0, auto;
+	z-index: 20;
+	/* position: relative; */
+	/* margin: 0, auto; */
 /*	padding-left: 10vw;*/
 /*	padding-right: 10vw;*/
-	padding-top: 7%;
-	padding-bottom: 5%;
+	/* padding-left:  */
+	padding-top: 5vh;
+	padding-bottom: 5vh;
 	font-size: 1.25em;
 	line-height: 1.1em;
 	font-family: "Chicago_title";
@@ -70,7 +87,7 @@ h1{
 }
 
 h2{
-	z-index: 5;
+	z-index: 15;
 /*	width: 100%;*/
 	margin: 0, auto;
 	padding-left: 10vw;
@@ -78,10 +95,10 @@ h2{
 	padding-top: 7vh;
 	padding-bottom: 7vh;
 	font-size: 4vw;
-	line-height: 1.1em;
-	letter-spacing: 0.2em;
+	line-height: 1.25em;
+	letter-spacing: 0.05em;
 	font-family: "Chicago_lead";
-	background: linear-gradient(45deg, rgba(255,0,134,1) 70%, rgba(255,0,134,0) 70%)
+	background: linear-gradient(45deg, rgba(255,0,134,0) 0%, rgba(255,0,134,1) 70%, rgba(255,0,134,0) 70%);
 }
 h2:hover{
 	transform: skewY(-4.5deg);
@@ -93,10 +110,10 @@ h3{
 	padding-right: 10vw;
 	padding-top: 5vh;
 	padding-bottom: 5vh;
-	letter-spacing: 0.2em;
+	letter-spacing: 0.125em;
 	font-size: 4vw;
 /*	font-size: 0.9em;*/
-	line-height: 1.1em;
+	line-height: 1.025em;
 	font-family: "Chicago_text";
 }
 h3:hover{
@@ -117,15 +134,15 @@ h4{
 
 h5{
 	width: 100%;
-	background: linear-gradient(-135deg, rgba(255,228,0,0) 50%, rgba(255,228,0,1) 50%);
+	background: linear-gradient(-135deg, rgba(255,228,0,0) 40%, rgba(255,228,0,1) 40%, rgba(255,255,255,0) 70%);
 	margin: 0, auto;
 /*	padding-left: 10vw;
 	padding-right: 10vw;*/
 	padding-top: 6vh;
 	padding-bottom: 6vh;
 	font-size: 0.5em;
-	line-height: 1.1em;
-	letter-spacing: 0.1em;
+	line-height: 1.25em;
+	letter-spacing: 0.05em;
 	font-family: "Chicago_title";
 }
 
@@ -134,32 +151,53 @@ h5:hover{
 }
 
 h6{
+	position: relative;
+	padding-top: 2em;
+	text-align: left;
+	padding-left: 10%;
+	/* margin: 0 auto; */
 	font-size: 20px;
 	font-family: "Chicago_text";
-	float: right;
-	display: inline-block;
 	/* padding-left: 5vw; */
-	padding-top: 20px;
-	padding-bottom: 20px;
+	/* padding-top: 20px;
+	padding-bottom: 20px; */
 }
 
 p{
 	margin: 0 auto;
-	padding-left: 2%;
-	padding-right: 2%;
-	max-width: 1000px;
+	letter-spacing: 0.025em;
+	/* padding-left: 2%;
+	padding-right: 2%; */
+	max-width: 1200px;
 	padding-top: 5vh;
 	padding-bottom: 10vh;
 	font-size: 0.5em;
 	line-height: 1.5em;
 	font-family: "Chicago_text";
 }
+input[type="text"]::-webkit-input-placeholder {
+  color: pink;
+}
+
+.button{
+	color: red;
+}
+.button:hover{
+	transform: translateY(-20px);
+}
+
 
 #head{
-	width: 100%;
-	text-align: right;
+	bottom: 0;
+	margin: 0;
+	pading-left: 10%;
+	text-align: left;
+	color: white;
+	background: linear-gradient(-135deg, rgba(21,23,25,0.5), rgba(17,17,29,1));
+	height: 10vh;
+	width: 100vw;
 	position: fixed;
-	z-index: 11;
+	z-index: 10;
 	/* background: white; */
 }
 
@@ -171,28 +209,34 @@ p{
 	padding-bottom: 10vh;
 }
 
+
 .q{
 	margin-top: 5vh;
 	margin-bottom: 5vh;
 	transform: skewY(-4.5deg);
 /*	padding-left: 10vw;
 	padding-right: 10vw;*/
-	background: rgba(255,0,134,1);
 	padding-top: 5vh;
 	padding-bottom: 5vh;
 }
+.ichi{
+	background: linear-gradient(45deg, rgba(255,0,134,0) 10%, rgba(255,212,225,1) 50%, rgba(137,0,217,0) 90%);
+}
+.ni{
+	background: linear-gradient(45deg, rgba(255,255,134,0) 30%, rgba(218,212,225,1) 50%, rgba(137,0,217,0) 70%);
+}
+
 .q:hover{
 	transform: skewY(0);
-	background: rgba(255,228,0,1);
-	color: rgba(255,0,134,1);
-}
-.a:hover{
+	/* background: rgba(255,228,0,1); */
 	color: rgba(255,0,134,1);
 }
 
+
+
 div{
-	width: 100%;
-	height: auto;
+	width: 100vw;
+	/* height: auto; */
 }
 
 
@@ -203,11 +247,19 @@ div{
 }
 
 #welcome{
+	margin-bottom: 0;
+	/* z-index: 10; */
+	position: relative;
+	padding-top: 32vh;
 	width: 100vw;
-	min-height: 100vh;
-	height: auto;
+	height: 100vh;
 	background: url("pctrs/imgs/welcome.jpg");
+	background-position: right bottom;
 	background-size: cover;
+}
+
+.auto{
+	width: auto;
 }
 
 
@@ -239,12 +291,11 @@ div{
 .standart{
 	background: linear-gradient(45deg, #eae9e4, #e1dbd1, #d7cec0, #e6e3da, #cbc0b2, #fffef8, #e2dfd8, #dad2c9, #f6efe7);
 	margin: 0, auto;
-	width: 100vw;
-	padding-top: 10vh;
-	padding-bottom: 10vh;
-	padding-left: 10vw;
-	padding-right: 10vw;
-	min-height: 100vh;
+	/* width: 100vw; */
+	/* padding-top: 10vh;
+	padding-bottom: 10vh; */
+	/* padding-left: 5vw;
+	padding-right: 5vw; */
 	height: auto;
 }
 
@@ -272,6 +323,8 @@ div{
 #masters:hover{
 	background-size: 140%;
 	background-position: 130% -20%;
+	padding-left: 20vw;
+	padding-right: 0;
 }
 
 #materials{
@@ -296,7 +349,17 @@ div{
 	padding-bottom: 15vh;
 }
 
+.pup{
+	width: 100%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
 .half {
+	position: relative;
+	/* padding-left: 5%;
+	padding-right: 5%; */
 	padding-top: 5vh;
 	padding-bottom: 5vh;
     float: left;
@@ -321,10 +384,14 @@ div{
 
 .half:hover{
 /*	transform: scale(0.9);*/
-	background: #ffe400;
+	/* background: #ffe400; */
+	/* background: url("pctrs/"); */
+	color: white;
 }
 .third:hover{
-	background: #ffe400;
+	background: black;
+	color: white;
+	/* background: #ffe400; */
 }
 
 
@@ -333,32 +400,55 @@ div{
 	padding-bottom: 20vh;
 }
 
+
+
 #qa{
-	height: 80vh;
-	display: flex;
+	/* height: 80vh; */
+	/* display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: center; */
+}
+
+#franchise{
+	width: 100%;
+	position: absolute;
+	z-index: 20;
+}
+
+textarea:focus, input:focus{
+    outline: none;
 }
 
 input[type=text], select, textarea{
-	margin-top: 20px;
-	width: 30%;
-	padding: 10px;
-	font-size: 28px;
+	border: none;
+	/* margin-top: 20px; */
+	width: 50%;
+	height: 10vh;
+	color: red;
+	/* padding: 10px; */
+	font-size: 25px;
+	font-family: "Chicago_text";
 	text-align: center;
 }
 
 br{
-	line-height: 2em;
+	line-height: 1.2em;
 }
 
-#button{
-	margin-top: 1vh;
-	background: white;
+#send{
+	/* margin-top: 2vh; */
+	/* background: white;
 	width: 200px;
 	font-family: "Chicago_text";
-	font-size: 30px;
+	font-size: 20px; */
+	padding-bottom: 10vh;
 	border: 0;
+	background: white;
+	font-family: "Chicago_title";
+	/* color: red; */
+	font-size: 40px;
+	height: 10vh;
+	width: 100%;
 /*	transform: skewY(-4.5deg);*/
 }
 
@@ -380,6 +470,10 @@ i{
 }
 
 @media (orientation:portrait){
+	div{
+		width: 100wh;
+		height: 100wh;
+	}
 	.half{
 		width: 100%;
 	}
@@ -397,6 +491,10 @@ i{
 	}
 }
 @media (orientation:landscape) {
+	div{
+		width: 100wh;
+		height: 90wh;
+	}
 	.half{
 		width: 50%;
 	}
