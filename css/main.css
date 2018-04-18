@@ -271,8 +271,8 @@ div{
 }
 
 #salons{
-	height: 72vh;
-	background: url("pctrs/imgs/salons/salon_1.jpg");
+	height: 73vh;
+	background: url("pctrs/imgs/salon_1.jpg");
 	background-size: cover;
 	/* margin-top: 5%; */
 }
