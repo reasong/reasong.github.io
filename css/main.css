@@ -11,6 +11,11 @@
 }
 
 @font-face {
+    font-family: "A";
+    src: url("fonts/ArnoPro-Display.otf") format("opentype");
+}
+
+@font-face {
     font-family: "Chicago_title";
     src: url("fonts/Code Pro Bold.otf") format("opentype");
 }
@@ -174,15 +179,15 @@ h6{
 
 p{
 	margin: 0 auto;
-	letter-spacing: 0.0125em;
+	letter-spacing: 0.025em;
 	/* padding-left: 2%;
 	padding-right: 2%; */
 	max-width: 1200px;
-	padding-top: 5vh;
-	padding-bottom:5vh;
-	font-size: 0.5em;
+	padding-top: 2vh;
+	padding-bottom:2vh;
+	/* font-size: 0.5em; */
 	/* line-height: 1.5em; */
-	font-family: "Chicago_text";
+	font-family: "A";
 }
 input[type="text"]::-webkit-input-placeholder {
   color: pink;
@@ -452,10 +457,8 @@ div{
 
 
 #qa{
-	/* height: 80vh; */
-	/* display: flex;
-	flex-direction: column;
-	align-items: center; */
+	/* padding-top: 2vh; */
+	padding-bottom: 20vh;
 }
 
 #franchise{
@@ -540,8 +543,8 @@ i{
 		line-height: 40px;
 	}
 	p{
-		font-size: 20px;
-		line-height: 30px;
+		font-size: 24px;
+		line-height: 32px;
 	}
 	h5{
 		font-size: 28px;
@@ -564,8 +567,8 @@ i{
 		line-height: 32px;
 	}
 	p{
-		font-size: 18px;
-		line-height: 26px;
+		font-size: 20px;
+		line-height: 30px;
 	}
 	h5{
 		font-size: 36px;
