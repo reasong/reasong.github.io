@@ -30,7 +30,8 @@
     src: url("fonts/Code Pro.otf") format("opentype");
 }
 
-body {
+body{
+	/* perspective: 100px; */
 	text-align: center;
 	overflow-x: hidden;
 	font-family: "Chicago_text";
@@ -43,19 +44,24 @@ body {
 ._left{
 /*	width: 100%;*/
 	text-align: left;
+	/* padding-top: 2em; */
 	padding-right: 10%;
 	padding-left: 10%;
 /*	width: 75vw;*/
 }
+.pt{
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+}
 
 .s_left{
 	text-align: left;
-	padding-right: 15%;
+	padding-right: 20%;
 	padding-left: 10%;
 }
 .m_left{
 	text-align: left;
-	padding-right: 10%;
+	padding-right: 20%;
 	padding-left: 15%;
 }
 .x_left{
@@ -92,12 +98,13 @@ h1{
 	margin-top: 5vh;
 	/* padding-bottom: 2vh; */
 	font-size: 0.9em;
-	line-height: 1.1em;
+	line-height: 1.125em;
 	font-family: "Chicago_title";
 	width: 30%;
 }
 
 h2{
+	transform: translateZ(2px);
 	z-index: 15;
 /*	width: 100%;*/
 	margin: 0, auto;
@@ -106,7 +113,7 @@ h2{
 	padding-top: 5vh;
 	padding-bottom: 5vh;
 	font-size: 0.6em;
-	line-height: 1.25em;
+	line-height: 1.125em;
 	letter-spacing: 0.05em;
 	font-family: "Chicago_lead";
 	background: linear-gradient(45deg, rgba(255,0,134,0) 0%, rgba(255,0,134,1) 70%, rgba(255,0,134,0) 70%);
@@ -116,6 +123,7 @@ h2:hover{
 }
 
 h3{
+	transform: translateZ(4px);
 	margin: 0, auto;
 	padding-left: 10vw;
 	padding-right: 10vw;
@@ -124,7 +132,7 @@ h3{
 	letter-spacing: 0.125em;
 	font-size: 4vw;
 /*	font-size: 0.9em;*/
-	line-height: 1.025em;
+	line-height: 1.125em;
 	font-family: "Chicago_text";
 }
 h3:hover{
@@ -133,6 +141,7 @@ h3:hover{
 }
 
 h4{
+	transform: translateZ(8px);
 	/* position: relative; */
 	margin: 0, auto;
 	/* padding-right: 30vw; */
@@ -148,6 +157,7 @@ h4{
 
 
 h5{
+	transform: translateZ(3px);
 	width: 100%;
 	background: linear-gradient(-135deg, rgba(255,228,0,0) 40%, rgba(255,228,0,1) 40%, rgba(255,255,255,0) 70%);
 	margin: 0, auto;
@@ -156,7 +166,7 @@ h5{
 	padding-top: 6vh;
 	padding-bottom: 6vh;
 	font-size: 0.5em;
-	line-height: 1.25em;
+	line-height: 1.125em;
 	letter-spacing: 0.05em;
 	font-family: "Chicago_title";
 }
@@ -179,7 +189,7 @@ h6{
 
 p{
 	margin: 0 auto;
-	letter-spacing: 0.025em;
+	letter-spacing: 0.0625em;
 	/* padding-left: 2%;
 	padding-right: 2%; */
 	max-width: 1200px;
@@ -224,11 +234,11 @@ input[type="text"]::-webkit-input-placeholder {
 
 
 .q{
-	font-size: 0.4em;
+	font-size: 24px;
 	font-family: "Chicago_title";
-	margin-top: 5vh;
-	margin-bottom: 5vh;
-	line-height: 1.25em;
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+	line-height: 1.3em;
 	transform: skewY(-4.5deg);
 /*	padding-left: 10vw;
 	padding-right: 10vw;*/
@@ -251,6 +261,8 @@ input[type="text"]::-webkit-input-placeholder {
 
 
 div{
+	/* transform-style: preserve-3d;
+	perspective: 40px; */
 	width: 100vw;
 	/* height: auto; */
 }
@@ -348,7 +360,7 @@ div{
 	background: url("pctrs/imgs/masters.jpg");
 /*	background-position: -20vw 0;*/
 	background-size: 130%;
-	background-position: 280% 20%;
+	background-position: 100% 20%;
 	color: white;
 	margin: 0, auto;
 	padding-left: 10vw;
@@ -392,6 +404,22 @@ div{
 }
 #profits{
 	width: 100vw;
+	/* height: 70vh;
+	background: url("pctrs/imgs/american.jpg");
+	background-size: cover; */
+}
+.rela{
+	/* z-index: -1; */
+	/* left: 0; */
+	/* height: 300px; */
+	/* margin: 0 auto; */
+	padding: 2%;
+	position: relative;
+	width: 58%;
+	/* margin-right: 10%; */
+}
+.rela:hover{
+	padding: 4%;
 }
 
 #salon{
@@ -484,7 +512,7 @@ input[type=text], select, textarea{
 }
 
 br{
-	line-height: 1.2em;
+	/* line-height: 1.5em; */
 }
 
 #send{
@@ -526,6 +554,11 @@ i{
    color: transparent;
    text-shadow: 0 0 20px rgba(0,0,0,0.7);
 }
+i:hover{
+	color: black;
+	text-shadow: 0 0 0px rgba(0,0,0,0.7);
+}
+
 
 @media (orientation:portrait){
 	.third {
@@ -564,14 +597,14 @@ i{
 	}
 	h4{
 		font-size: 28px;
-		line-height: 40px;
+		/* line-height: 40px; */
 	}
 	p{
-		font-size: 26px;
-		line-height: 34px;
+		font-size: 22px;
+		/* line-height: 34px; */
 	}
 	h5{
 		font-size: 36px;
-		line-height: 42px;
+		/* line-height: 42px; */
 	}
 }
