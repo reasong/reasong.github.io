@@ -260,8 +260,7 @@ input[type="text"]::-webkit-input-placeholder {
 
 
 .q{
-	text-decoration: none;
-    	border-bottom: 1px dashed #ffe8d5; 
+	text-decoration-style: dotted;
 	font-size: 20px;
 	font-family: "Chicago_title";
 	margin-top: 1vh;
