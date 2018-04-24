@@ -7,7 +7,7 @@
 	padding: 0;
 	text-align: center;
 	font-size: 80px;
-	cursor: url("pctrs/cursor.png"), pointer;
+	user-select: none;
 }
 
 @font-face {
@@ -31,10 +31,15 @@
 }
 
 body{
+	cursor: url("pctrs/cursor.png"), pointer;
 	/* perspective: 100px; */
 	text-align: center;
 	overflow-x: hidden;
 	font-family: "Chicago_text";
+}
+
+#Body{
+	cursor: url("pctrs/love.png"), pointer;
 }
 
 ._center{
@@ -214,8 +219,8 @@ p{
 	/* padding-left: 2%;
 	padding-right: 2%; */
 	max-width: 1200px;
-	/* padding-top: 2vh;
-	padding-bottom:2vh; */
+	padding-top: 1vh;
+	padding-bottom:1vh;
 	/* font-size: 0.5em; */
 	/* line-height: 1.5em; */
 	font-family: "A";
@@ -255,10 +260,10 @@ input[type="text"]::-webkit-input-placeholder {
 
 
 .q{
-	font-size: 24px;
+	font-size: 20px;
 	font-family: "Chicago_title";
-	margin-top: 2vh;
-	margin-bottom: 2vh;
+	margin-top: 1vh;
+	margin-bottom: 1vh;
 	line-height: 1.3em;
 	transform: skewY(-4.5deg);
 /*	padding-left: 10vw;
@@ -280,6 +285,8 @@ input[type="text"]::-webkit-input-placeholder {
 }
 
 .a{
+	padding-top: 0;
+	padding-bottom: 0;
 	/* display: none; */
 	overflow: hidden;
 	padding: 18 0;
@@ -291,6 +298,7 @@ div{
 	/* transform-style: preserve-3d;
 	perspective: 40px; */
 	width: 100vw;
+	min-height: 20vh;
 	/* height: auto; */
 }
 
@@ -503,8 +511,8 @@ div{
 
 
 .lend{
-	padding-left: 10%;
-	padding-right: 10%;
+	padding-left: 15%;
+	padding-right: 15%;
 	padding-top: 10vh;
 	padding-bottom: 20vh;
 }
