@@ -97,7 +97,7 @@ h1{
 	/* padding-left:  */
 	margin-top: 5vh;
 	/* padding-bottom: 2vh; */
-	font-size: 0.9em;
+	font-size: 7vh;
 	line-height: 1.125em;
 	font-family: "Chicago_title";
 	width: 30%;
@@ -125,8 +125,8 @@ h2:hover{
 h3{
 	transform: translateZ(4px);
 	margin: 0, auto;
-	padding-left: 10vw;
-	padding-right: 10vw;
+	/* padding-left: 10vw;
+	padding-right: 10vw; */
 	padding-top: 5vh;
 	padding-bottom: 5vh;
 	letter-spacing: 0.125em;
@@ -145,11 +145,11 @@ h4{
 	/* position: relative; */
 	margin: 0, auto;
 	/* padding-right: 30vw; */
-	padding-left: 5%;
-	padding-right: 5%;
+	/* padding-left: 5%;
+	padding-right: 5%; */
 	padding-top: 5vh;
 	padding-bottom: 2vh;
-	/* font-size: 0.4em; */
+	font-size: calc((5vh+5vw)/2);
 	/* line-height: 1.5em; */
 	letter-spacing: 0.025em;
 	font-family: "Chicago_text";
@@ -187,14 +187,35 @@ h6{
 	padding-bottom: 20px; */
 }
 
+h7{
+	text-align: center;
+	color: red;
+	/* position: relative; */
+	font-family: "A";
+	font-size: 120px;
+	/* width: 10vw; */
+	margin-top: 200px;
+}
+h7 :hover{
+	color: white;
+	z-index: 100;
+}
+
+#A{
+	background-size: 100%;
+	background: url("pctrs/A.jpg");
+	width: 100vw;
+	height: 100vh;
+}
+
 p{
 	margin: 0 auto;
 	letter-spacing: 0.0625em;
 	/* padding-left: 2%;
 	padding-right: 2%; */
 	max-width: 1200px;
-	padding-top: 2vh;
-	padding-bottom:2vh;
+	/* padding-top: 2vh;
+	padding-bottom:2vh; */
 	/* font-size: 0.5em; */
 	/* line-height: 1.5em; */
 	font-family: "A";
@@ -252,12 +273,18 @@ input[type="text"]::-webkit-input-placeholder {
 	background: linear-gradient(45deg, rgba(255,255,134,0) 30%, rgba(218,212,225,1) 50%, rgba(137,0,217,0) 70%);
 }
 
-.q:hover{
+.active, .q:hover{
 	transform: skewY(0);
 	/* background: rgba(255,228,0,1); */
 	color: #ff4e50;
 }
 
+.a{
+	/* display: none; */
+	overflow: hidden;
+	padding: 18 0;
+	max-height: 0;
+}
 
 
 div{
@@ -270,25 +297,25 @@ div{
 
 #conditions{
 /*	background: url("pctrs/imgs/welcome.jpg");*/
-	padding-top: 20vh;
-	padding-bottom: 20vh;
+	padding-top: 10vh;
+	padding-bottom: 10vh;
 }
 
 .bottom{
-	padding-right: 20vw;
-	position: relative;
+	/* padding-right: 20vw; */
+	position: absolute;
 	bottom: 0;
 }
 
 #welcome{
-	margin-bottom: 0;
+	/* margin-bottom: 0; */
 	/* z-index: 10; */
 	position: relative;
 	padding-top: 32vh;
 	width: 100vw;
 	height: 100vh;
 	background: url("pctrs/imgs/welcome.jpg");
-	background-position: right bottom;
+	background-position: right top;
 	background-size: cover;
 }
 
@@ -338,8 +365,8 @@ div{
 	/* padding-top: 10vh;
 	padding-bottom: 10vh; */
 	/* padding-left: 5vw; */
-	padding-left: 5%;
-	padding-right: 10%;
+	/* padding-left: 5%;
+	padding-right: 10%; */
 	padding-top: 10vh;
 	padding-bottom: 10vh;
 	/* padding-right: 10vw; */
@@ -512,7 +539,7 @@ input[type=text], select, textarea{
 }
 
 br{
-	/* line-height: 1.5em; */
+	line-height: 0.75em;
 }
 
 #send{
@@ -571,17 +598,16 @@ i:hover{
 	.half{
 		width: 100%;
 	}
-	h4{
+	/* h4{
 		font-size: 26px;
-		line-height: 32px;
-	}
+	} */
 	p{
-		font-size: 24px;
-		line-height: 32px;
+		font-size: 22px;
+		/* line-height: 32px; */
 	}
 	h5{
 		font-size: 28px;
-		line-height: 36px;
+		/* line-height: 36px; */
 	}
 }
 @media (orientation:landscape) {
@@ -595,10 +621,9 @@ i:hover{
 	.half{
 		width: 50%;
 	}
-	h4{
+	/* h4{
 		font-size: 28px;
-		/* line-height: 40px; */
-	}
+	} */
 	p{
 		font-size: 22px;
 		/* line-height: 34px; */
