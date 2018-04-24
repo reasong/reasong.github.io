@@ -230,7 +230,7 @@ input[type="text"]::-webkit-input-placeholder {
 }
 
 .button{
-	color: red;
+	color: #ffe8d5;
 }
 .button:hover{
 	transform: translateY(-20px);
@@ -260,6 +260,8 @@ input[type="text"]::-webkit-input-placeholder {
 
 
 .q{
+	text-decoration: none;
+    	border-bottom: 1px dashed #ffe8d5; 
 	font-size: 20px;
 	font-family: "Chicago_title";
 	margin-top: 1vh;
