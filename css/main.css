@@ -260,7 +260,9 @@ input[type="text"]::-webkit-input-placeholder {
 
 
 .q{
-	text-decoration: dotted;
+	border-bottom: dashed 1px #000000;
+      	display: inline;
+      	padding-bottom: 3px;
 	font-size: 20px;
 	font-family: "Chicago_title";
 	margin-top: 1vh;
@@ -269,8 +271,8 @@ input[type="text"]::-webkit-input-placeholder {
 	transform: skewY(-4.5deg);
 /*	padding-left: 10vw;
 	padding-right: 10vw;*/
-	padding-top: 5vh;
-	padding-bottom: 5vh;
+/* 	padding-top: 5vh;
+	padding-bottom: 5vh; */
 }
 .ichi{
 	background: linear-gradient(45deg, rgba(255,0,134,0) 10%, rgba(255,212,225,1) 50%, rgba(137,0,217,0) 90%);
