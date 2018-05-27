@@ -1,12 +1,3 @@
-var a = document.getElementById("A");
-you=0;
-function ten(){
-  you+=1;
-  console.log("wu");
-  a.style.backgroundSize=you+'%';
-};
-
-
 var acc = document.getElementsByClassName("q");
 var i;
 
