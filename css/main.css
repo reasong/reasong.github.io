@@ -31,6 +31,7 @@
 	width: 100%;
 }
 
+
 #main{
 	/* position: absolute; */
 	margin: auto;
@@ -57,6 +58,8 @@ span{
 p span{
 	font-family: "Regular";
 }
+
+
 
 .button{
 	text-transform: uppercase;
@@ -118,6 +121,24 @@ div{
 	padding: 40px 0px;
 }
 
+input{
+	/* float: left; */
+	/* min-width: 500px; */
+	border: none;
+	margin: 40px 60px;
+	text-align: left;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	font-size: 20px;
+	padding: 20px 0px;
+	outline: none;
+}
+
+input:focus{
+	color: #ff015b;
+}
+
 .double{
 	display: flex;
 	flex-wrap: wrap;
@@ -140,6 +161,10 @@ div{
 	/* background: green; */
 }
 
+.half:hover{
+	color: #ff015b;
+}
+
 .buster{
 	padding-top: 40px;
 	padding-bottom: 80px;
@@ -147,13 +172,13 @@ div{
 	/* background: #9cffd9; */
 }
 
-div.plashk{
+.plashk{
 	padding-top: 60px;
 	padding-bottom: 300px;
 	background: #ffdef1;
 }
 
-div.center{
+.center{
 	/* padding-bottom: 100px; */
 	/* padding-top: 40px; */
 	/* padding-top: 60px; */
@@ -220,7 +245,7 @@ p.d{
 	float: none;
 }
 
-.q{
+p.q{
 	padding-top: 60px;
 	font-family: "Bold";
 	/* margin-top: 1vh;
@@ -234,19 +259,21 @@ p.d{
 	text-underline-position: under; */
 }
 
-.active, .q:hover{
+p.active, .q:hover{
 	/* transform: skewY(0); */
 	/* background: rgba(255,228,0,1); */
 	color: #ff015b;
 }
 
-.answer{
+p.answer{
+	font-size: 24px;
 	padding-top: 0;
 	padding-bottom: 0;
 	/* display: none; */
 	overflow: hidden;
-	padding: 18 0;
+	/* padding: 18px 0px; */
 	max-height: 0;
+	min-height: 0;
 }
 
 br{
@@ -254,6 +281,16 @@ br{
 }
 
 @media only screen and (max-device-width : 700px){
+	p{
+		max-width: 100%;
+	}
+	p.answer{
+		font-size: 56px;
+		line-height: 64px;
+	}
+	.plashk{
+		max-width: 100%;
+	}
 	.button{
 		width: 60%;
 		font-size: 30px;
@@ -277,13 +314,12 @@ br{
 		line-height: 70px;
 		max-width: 100%;
 	}
-
-	p{
-		max-width: 100%;
-	}
 }
 
 @media only screen and (min-device-width : 701px){
+	.plashk{
+		max-width: 60%;
+	}
 	h3{
 		max-width: 540px;
 	}
@@ -298,7 +334,6 @@ br{
 	h2{
 		max-width: 700px;
 	}
-
 	p{
 		max-width: 630px;
 	}
