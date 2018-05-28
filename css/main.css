@@ -38,6 +38,39 @@
 	max-width: 1260px;
 }
 
+div.three{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+div.third{
+	/* max-width: 100%; */
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+
+div.grey{
+	background: #f7f7f7;
+}
+
+h4{
+	/* border-bottom: 1px solid #eeeeee; */
+	/* opacity: 0.7; */
+	text-align: left;
+	padding: 0 60px;
+	/* padding-top: 0px; */
+	font-size: 24px;
+	line-height: 28px;
+	font-family: "Regular";
+}
+
+h3.dop_bottom{
+	font-size: 20px;
+	text-transform: uppercase;
+	padding-bottom: 40px;
+}
+
 #ni{
 	background: #f7f7f7;
 	right: 0;
@@ -114,7 +147,7 @@ div{
 	/* background: #b0dece; */
 	/* padding-top: 20px; */
 	/* padding-bottom: 20px; */
-	height: auto;
+	/* height: auto; */
 }
 
 .questions{
@@ -130,7 +163,7 @@ input{
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	font-size: 20px;
+	font-size: 24px;
 	padding: 20px 0px;
 	outline: none;
 }
@@ -152,8 +185,8 @@ input:focus{
 	/* position: relative; */
 	/* padding-bottom: 40px; */
 	/* background: #ace5ea; */
-	/* padding-top: 20px;
-	padding-bottom: 80px; */
+	padding-top: 40px;
+	padding-bottom: 40px;
 	/* position: relative; */
 	/* height: auto; */
 	/* height: 100%; */
@@ -161,13 +194,13 @@ input:focus{
 	/* background: green; */
 }
 
-.half:hover{
+/* .half:hover{
 	color: #ff015b;
-}
+} */
 
 .buster{
-	padding-top: 40px;
-	padding-bottom: 80px;
+	padding-top: 80px;
+	padding-bottom: 40px;
 	/* padding-bottom: 40px; */
 	/* background: #9cffd9; */
 }
@@ -233,7 +266,7 @@ p{
 	font-family: "Light";
 	font-size: 22px;
 	line-height: 28px;
-	/* max-width: 600px; */
+	/* max-width: 94%; */
 	/* float: left; */
 }
 
@@ -241,7 +274,7 @@ p.d{
 	padding-top: 20px;
 	/* padding-left: 80px;
 	padding-top: 20px; */
-	color: grey;
+	opacity: 0.3;
 	float: none;
 }
 
@@ -266,7 +299,8 @@ p.active, .q:hover{
 }
 
 p.answer{
-	font-size: 24px;
+	font-size: 22px;
+	line-height: 28px;
 	padding-top: 0;
 	padding-bottom: 0;
 	/* display: none; */
@@ -277,22 +311,37 @@ p.answer{
 }
 
 br{
-	line-height: 60px;
+	line-height: 56px;
 }
 
 @media only screen and (max-device-width : 700px){
-	p{
+	p.s{
+		max-width: 70%;
+	}
+	br{
+		line-height: 90px;
+	}
+	input{
+		font-size: 40px;
+	}
+	div.third{
 		max-width: 100%;
+		/* line-height: 10px; */
+	}
+	p{
+		/* max-width: 96%; */
+		font-size: 32px;
+		line-height: 48px;
 	}
 	p.answer{
-		font-size: 56px;
-		line-height: 64px;
+		font-size: 42px;
+		line-height:48px;
 	}
 	.plashk{
 		max-width: 100%;
 	}
 	.button{
-		width: 60%;
+		max-width: 60%;
 		font-size: 30px;
 		line-height: 36px;
 	}
@@ -317,6 +366,9 @@ br{
 }
 
 @media only screen and (min-device-width : 701px){
+	div.third{
+		max-width: 410px;
+	}
 	.plashk{
 		max-width: 60%;
 	}
@@ -335,6 +387,9 @@ br{
 		max-width: 700px;
 	}
 	p{
+		max-width: 630px;
+	}
+	p.answer{
 		max-width: 630px;
 	}
 }
