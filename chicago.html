@@ -4,6 +4,8 @@
 <head>
  	<meta charset="utf-8">
 	<title>Франшиза «СHICAGO»</title>
+  <!-- <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script> -->
+  <!-- <script type="text/javascript" src="js/my_j.js"></script> -->
 	<link rel="icon" type="image/png" href="css/pctrs/fav.png">
 	<link rel="stylesheet" href="css/main.css" type="text/css">
 </head>
@@ -31,7 +33,7 @@
 Открыть салон красоты в&nbspсвоем городе
 </a>
 </div>
-<div class="buster">
+<div class="buster" id="begin">
 <h2>
 Для начинающих и&nbspтех, у&nbspкого уже&nbspесть салон
 </h2>
@@ -61,7 +63,7 @@
 </p>
 </div>
 </div>
-<div class="inject">
+<div class="buster" id="target">
 <h2>
 Франшиза точно подойдет вам, если
 </h2>
@@ -73,7 +75,11 @@
 — Хотите, чтобы бизнес приносил прибыль без&nbspвашего излишнего контроля.<br>
 </p>
 </div>
-<div class="inject">
+<div class="buster">
+<div class="flowl">
+<img src="css/pctrs/imgs/why.png"></img>
+</div>
+<div class="half">
 <h2>
 Почему именно салон красоты?
 </h2>
@@ -85,7 +91,8 @@
 — Вы сможете постоянно ухаживать за&nbspсобой: все услуги салона для&nbspвас бесплатные.<br>
 </p>
 </div>
-<div class="name">
+</div>
+<div class="name" id="best">
 <h2>
 Чем франшиза “Чикаго” лучше других?
 </h2>
@@ -208,7 +215,7 @@
 </div>
 <button class="button">Хочу начать </button>
 </div>
-<div class="name">
+<div class="name" id="arrows">
 <h2>
 Поможем открыть бизнес
 </h2>
@@ -218,16 +225,21 @@
 Научим договариваться с&nbspпоставщиками, проводить маркетинговые кампании, выходить из&nbspкризисных ситуаций.
 </p>
 </div>
-<div class="plashk">
+<div class="name">
+<div class="flowl">
+<img src="css/pctrs/imgs/sciss.png"></img>
+</div>
+<div class="half plashk">
 <h3>
-Два ваших лучших мастера будут обучаться в&nbspСанкт-Петербурге в&nbspнашей Академии Красоты бесплатно.<br>
+Два ваших лучших мастера будут обучаться в&nbspСанкт-Петербурге в&nbspнашей Академии Красоты бесплатно<br>
 </h3>
 <p>
 Мы научим их работать по&nbspстандартам и&nbspрасскажем, как&nbspдонести знания до&nbspколлег.<br>
 Мастера получат опыт и&nbspпознакомятся с&nbspпетербургской командой.
 </p>
 </div>
-<div  class="name">
+</div>
+<div  class="inject" id="money">
 <h2>
 Высокий доход каждый месяц
 </h2>
@@ -235,7 +247,11 @@
 Один салон приносит предпринимателю от<span>&nbsp350&nbspдо&nbsp800 тысяч рублей</span> чистой прибыли в&nbspмесяц.
 </p>
 </div>
-<div class="name">
+<div class="double">
+<div class="flowl">
+<img src="css/pctrs/imgs/our.png"></img>
+</div>
+<div class="half">
 <h2>
 Передадим свой опыт
 </h2>
@@ -245,19 +261,27 @@
 Мы ориентируемся на&nbspклиентов с&nbspвысоким доходом, поэтому наши услуги стоят дороже, чем в среднем по рынку.
 </p>
 </div>
-<div class="inject">
+</div>
+<div class="buster" id="holden">
 <h2>
 Поможем привлечь и&nbspудержать клиентов
 </h2>
 <p>
 Мы поможем с&nbspрекламой вашего салона: от&nbspинтернет-маркетинга до&nbspсложной аналитики. Расскажем, как вести группы в&nbspсоциальных сетях и&nbspрисовать макеты листовок.
 </p>
-<div class="plashk">
+</div>
+<div class="inject">
+<div class="double">
+<div class="half">
 <p>
 Салоны «Чикаго» работают с<span>&nbsp2010&nbspгода</span>.<br>
 Наш аккаунт в&nbspИнстаграме собрал <span>17&nbspтысяч подписчиков</span>, на&nbspe-mail рассылку подписались <span>5&nbsp000 человек</span>.<br>
 У&nbspнас есть своя печатная газета. Каждый месяц к&nbspнам приходят <span>500</span> новых клиентов.
 </p>
+</div>
+<div class="half">
+<img src="css/pctrs/imgs/hold.png">
+</div>
 </div>
 <a href="#" class="button">
 Узнать больше
@@ -271,8 +295,32 @@
 Нам не&nbspнравятся сети с&nbspодинаковыми филиалами, поэтому все салоны «Чикаго» отличаются друг от&nbspдруга.<br>
 Мы привлекаем дизайнеров интерьеров для&nbspдетальной проработки каждого проекта и&nbspсоздаем пространства, в&nbspкоторых уютно и&nbspхорошо.
 </p>
+<div id="gallery">
+<div>
+<img class="salon" src="css/pctrs/salon/zoon_1.jpg"></img>
 </div>
-<div class="inject">
+<div>
+<img class="salon" src="css/pctrs/salon/zoon_2.jpg"></img>
+</div>
+<div>
+<img class="salon" src="css/pctrs/salon/zoon_3.jpg"></img>
+</div>
+<div>
+<img class="salon"src="css/pctrs/salon/zoon_4.jpg"></img>
+</div>
+<div>
+<img class="salon" src="css/pctrs/salon/zoon_5.jpg"></img>
+</div>
+<div>
+<img class="salon" src="css/pctrs/salon/zoon_6.jpg"></img>
+</div>
+</div>
+</div>
+<div class="double">
+<div class="flowl">
+<img src="css/pctrs/imgs/tre.png"></img>
+</div>
+<div class="half">
 <h2>
 Условия
 </h2>
@@ -284,6 +332,7 @@
 Первые полгода вы не&nbspплатите роялти.
 </span>
 </p>
+</div>
 </div>
 <div class="inject">
 <div class="double">
@@ -320,7 +369,7 @@
 Узнать порядок инвестиций
 </a>
 </div>
-<div class="inject">
+<div class="buster" id="faq">
 <h2>
 Вопросы
 </h2>
@@ -359,16 +408,18 @@
 Далее Ук приступаем к&nbspизготовлению мебели и&nbspопределяются сроки доставки оборудования.
 </p>
 </div>
-<div class="inject">
+<div class="inject" id="how">
 <h2>
 Как вы обучаете франчайзи?
 </h2>
 <p>
 Обучение франчайзи и&nbspего персонала проводится специалистами УК в&nbspвашем городе. Сроки обучения –<span>&nbsp5-7 дней</span>.<br>
-Стоимость обучения включена в&nbspпаушальный взнос.
 </p>
+<h4>
+Стоимость обучения включена в&nbspпаушальный взнос.
+</h4>
 </div>
-<div class="inject">
+<div class="name">
 <h2>
 Запустите прибыльный бизнес в&nbspсвоем городе
 </h2>
@@ -379,7 +430,7 @@
 <a class="button">Отправить</a>
 </form>
 </div>
-<div class="inject">
+<div class="name" id="seven">
 <p>
 За<span>&nbsp2018 год</span> мы&nbspпланируем найти всего <span>7&nbspпартнеров</span> в&nbspРоссии, чтобы протестировать запуск сети в&nbspрегионах с&nbspразной экономикой.<br>
 Вы можете запустить масштабный бизнес в&nbspсвоем регионе первым.
@@ -392,9 +443,53 @@
 <h2>
 Наша команда
 </h2>
+<div class="persons">
+<div class="person">
+<img class="pers" src="css/pctrs/persons/1.png"></img>
+<h3>
+Константин
+</h3>
 <p>
-Яна
+Основатель
 </p>
+</div>
+<div class="person">
+<img class="pers" src="css/pctrs/persons/1.png"></img>
+<h3>
+Яна
+</h3>
+<p>
+Основатель
+</p>
+</div>
+<div class="person">
+<img class="pers" src="css/pctrs/persons/1.png"></img>
+<h3>
+Галина
+</h3>
+<p>
+Операционный управляющей сети
+</p>
+</div>
+<div class="person">
+<img class="pers" src="css/pctrs/persons/1.png"></img>
+<h3>
+Петр
+</h3>
+<p>
+Запускающий менеджер
+</p>
+</div>
+<div class="person">
+<img class="pers" src="css/pctrs/persons/1.png"></img>
+<h3>
+Екатерина
+</h3>
+<p>
+Маркетолог
+</p>
+</div>
+</div>
 </div>
 </div>
 </body>
