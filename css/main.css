@@ -1,12 +1,12 @@
 *{
 	box-sizing: border-box;
 	-webkit-transition-property: all;
-	-webkit-transition-duration: 0.5s;
+	-webkit-transition-duration: 0.7s;
 	-webkit-transition-timing-function: ease;
 	margin: 0;
 	padding: 0;
-	text-align: center;
-	font-size: 80px;
+	/* text-align: center;
+	font-size: 80px; */
 	/* cursor: url("pctrs/cursor.png"), pointer; */
 }
 
@@ -25,17 +25,78 @@
     src: url("fonts/MullerRegular.otf") format("opentype");
 }
 
-.pctrs{
-	position: absolute;
-	z-index: -1;
-	width: 100%;
+section{
+	padding-right: 60px;
+	padding-left: 60px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	position: fixed;
+	height: auto;
+	width: 100vw;
+	background: white;
+	/* background: linear-gradient(to right, rgba(255,255,255, 1), rgba(255,255,255,0)); */
+	z-index: 1;
 }
 
+#phone{
+	position: absolute;
+	float: right
+	top: 40%;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+a{
+	float: left;
+	text-decoration: none;
+	text-transform: uppercase;
+	/* letter-spacing: 1px; */
+	position: relative;
+	padding-top: 20px;
+	color: black;
+	padding-right: 60px;
+	font-family: "Bold";
+	font-size: 16px;
+}
+#fully{
+	min-width: 80%;
+}
+
+#phone{
+	position: relative;
+	float: right;
+	/* font-size: 16px; */
+	/* font-family: "Regular"; */
+	padding-left: -80px;
+	/* right: 0; */
+	/* padding-right: 60px;
+	padding-left: 80px; */
+	/* margin-left: 10px; */
+}
+#phone:hover,:active{
+	cursor: default;
+}
+
+#logo{
+	padding-left: 0px;
+}
+
+a:hover, :active {
+    color: #fe043c;
+		cursor: pointer;
+}
+
+#pctrs{
+	position: absolute;
+	z-index: -1;
+	width: 100vw;
+}
 
 #main{
+	z-index: 2;
 	/* position: absolute; */
 	margin: auto;
-	max-width: 1260px;
 }
 
 div.three{
@@ -143,12 +204,18 @@ p span{
 	background-image: url("pctrs/imgs/begin.png");
 	background-repeat: no-repeat;
 	background-position: right bottom;
+	transform: skewY(-4.5deg);
+	transform: translateY(200px);
+	opacity: 0;
 }
 
 #arrows{
 	background-image: url("pctrs/imgs/arrows.png");
 	background-repeat: no-repeat;
 	background-position: right top;
+	transform: translateY(-300px);
+	transform: skewY(-4.5deg);
+	opacity: 0;
 }
 
 #hold{
@@ -168,6 +235,9 @@ p span{
 	background-image: url("pctrs/imgs/target.png");
 	background-repeat: no-repeat;
 	background-position: right bottom;
+	transform: translateY(200px);
+	transform: skewY(-4.5deg);
+	opacity: 0;
 }
 #money{
 	background-image: url("pctrs/imgs/money.png");
@@ -179,6 +249,9 @@ p span{
 	background-repeat: no-repeat;
 	background-size: 50%;
 	background-position: right center;
+	transform: translateY(-200px);
+	transform: skewY(-4.5deg);
+	opacity: 0;
 }
 #holden{
 	color: white;
@@ -190,6 +263,18 @@ p span{
 	background-repeat: no-repeat;
 	background-size: 60%;
 	background-position: right bottom;
+}
+
+#salons{
+	transform: translateY(300px);
+	transform: skewY(-4.5deg);
+	opacity: 0;
+}
+
+#send{
+	transform: translateY(-200px);
+	transform: skewY(-4.5deg);
+	opacity: 0;
 }
 
 img{
@@ -229,6 +314,7 @@ img.salon{
 }
 
 .button:hover{
+	cursor: pointer;
 	color: white;
 	background-color: #fe043c;
 }
@@ -248,7 +334,7 @@ div{
 }
 
 .name{
-	padding-top: 80px;
+	padding-top: 120px;
 	padding-bottom: 100px;
 	/* padding-top: 80px; */
 	/* background: #f8deed; */
@@ -272,6 +358,8 @@ div{
 input{
 	/* float: left; */
 	/* min-width: 500px; */
+	letter-spacing: 1px;
+	font-family: "Regular";
 	border: none;
 	text-transform: uppercase;
 	border-bottom: 1px solid #ff015b;
@@ -451,6 +539,12 @@ div.flowl{
 }
 
 @media only screen and (max-device-width : 700px){
+	#navigation{
+		visibility: hidden;
+	}
+	#franch{
+		visibility: visible;
+	}
 	div.flowl{
 		width: 100%;
 	}
@@ -514,9 +608,21 @@ div.flowl{
 		line-height: 70px;
 		max-width: 100%;
 	}
+	#main{
+		max-width: 100%;
+	}
 }
 
 @media only screen and (min-device-width : 701px){
+	#main{
+		max-width: 1260px;
+	}
+	#navigation{
+		visibility: visible;
+	}
+	#franch{
+		visibility: hidden;
+	}
 	div.flowl{
 		width: 500px;
 	}
