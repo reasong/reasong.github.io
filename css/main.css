@@ -1,7 +1,7 @@
 *{
 	box-sizing: border-box;
 	-webkit-transition-property: all;
-	-webkit-transition-duration: 0.3s;
+	-webkit-transition-duration: 0.5s;
 	-webkit-transition-timing-function: ease;
 	margin: 0;
 	padding: 0;
@@ -85,23 +85,138 @@ h3.dop_bottom{
 span{
 	/* font-family: "Regular"; */
 	font-size: 1em;
-	color: #ff015b;
+	color: #fe043c;
 }
 
 p span{
 	font-family: "Regular";
 }
 
+.persons{
+	padding-top: 60px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
 
+.pers{
+	/* padding-left: 20px; */
+	/* max-width: 360px; */
+}
+
+.person{
+	padding: 20px 20px;
+	/* padding-top: 60px; */
+	/* padding: 30px 60px; */
+}
+
+#gallery{
+	/* position: relative; */
+	padding-left: 40px;
+	padding-top: 40px;
+	display: flex;
+	white-space: nowrap;
+	/* height: 400px; */
+	overflow-x: auto;
+	/* direction: rtl; */
+}
+::-webkit-scrollbar {
+    height: 20px;
+}
+::-webkit-scrollbar-thumb {
+		/* width: 100px; */
+		/* padding-left: 60px; */
+    /* border-radius: 10px; */
+		background-color: black;
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); */
+}
+
+#best{
+	background-image: url("pctrs/imgs/best.png");
+	background-repeat: no-repeat;
+	background-size: 50%;
+	background-position: right bottom;
+}
+
+#begin{
+	background-image: url("pctrs/imgs/begin.png");
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+
+#arrows{
+	background-image: url("pctrs/imgs/arrows.png");
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+#hold{
+	background-image: url("pctrs/imgs/hold.png");
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+
+#seven{
+	background-image: url("pctrs/imgs/seven.png");
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-size: 50%;
+}
+
+#target{
+	background-image: url("pctrs/imgs/target.png");
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+#money{
+	background-image: url("pctrs/imgs/money.png");
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+#faq{
+	background-image: url("pctrs/imgs/faq.png");
+	background-repeat: no-repeat;
+	background-size: 50%;
+	background-position: right center;
+}
+#holden{
+	color: white;
+	background: linear-gradient(-45deg, #ff0049, #ff87f2);
+}
+#how{
+	background: linear-gradient(-45deg, #ffe400, #fffd31);
+	background-image: url("pctrs/imgs/fra.png");
+	background-repeat: no-repeat;
+	background-size: 60%;
+	background-position: right bottom;
+}
+
+img{
+	position: relative;
+	width: 100%;
+}
+
+img.salon{
+	padding-left: 20px;
+	height: 460px;
+	width: auto;
+}
+/* .salon{
+	position: relative;
+	max-height: 400px;
+	width: auto;
+} */
 
 .button{
+	background: rgba(255,255,255,0.5);
 	text-transform: uppercase;
 	font-family: "Bold";
 	display: inline-block;
-	background-color: transparent;
-	border: 1px solid #ff015b;
+	/* background-color: transparent; */
+	border: 1px solid #fe043c;
 	/* border-radius: 100px; */
-	color: #ff015b;
+	color: #fe043c;
 	padding: 30px 30px;
 	text-align: center;
 	text-decoration: none;
@@ -115,11 +230,11 @@ p span{
 
 .button:hover{
 	color: white;
-	background-color: #ff015b;
+	background-color: #fe043c;
 }
 
 b{
-	color: #ff015b;
+	color: #fe043c;
 }
 
 div{
@@ -158,18 +273,31 @@ input{
 	/* float: left; */
 	/* min-width: 500px; */
 	border: none;
+	text-transform: uppercase;
+	border-bottom: 1px solid #ff015b;
 	margin: 40px 60px;
 	text-align: left;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	font-size: 24px;
-	padding: 20px 0px;
+	font-size: 20px;
+	padding: 20px 20px;
 	outline: none;
+	min-width: 600px;
 }
 
 input:focus{
-	color: #ff015b;
+	color: #fe043c;
+}
+input::-webkit-input-placeholder {
+		padding-left: 0%;
+    color: #000000;
+		opacity: 0.5;
+}
+input:focus::-webkit-input-placeholder {
+		padding-left: 10%;
+		opacity: 1;
+    color: #fe043c;
 }
 
 .double{
@@ -180,7 +308,9 @@ input:focus{
 }
 
 .half{
-	justify-content: flex-start;
+	float: left;
+	min-width: 50%;
+	/* justify-content: flex-start; */
 	/* display: inline-flex; */
 	/* position: relative; */
 	/* padding-bottom: 40px; */
@@ -190,7 +320,6 @@ input:focus{
 	/* position: relative; */
 	/* height: auto; */
 	/* height: 100%; */
-	min-width: 50%;
 	/* background: green; */
 }
 
@@ -208,7 +337,7 @@ input:focus{
 .plashk{
 	padding-top: 60px;
 	padding-bottom: 300px;
-	background: #ffdef1;
+	background: linear-gradient(45deg, #fff83b, #fff600);
 }
 
 .center{
@@ -281,21 +410,23 @@ p.d{
 p.q{
 	padding-top: 60px;
 	font-family: "Bold";
+	/* text-decoration-style: underline;
+	text-decoration-style: dotted; */
 	/* margin-top: 1vh;
 	margin-bottom: 1vh; */
 	/* line-height: 1.3em; */
 	/* transform: skewY(-4.5deg); */
 /*	padding-left: 10vw;
 	padding-right: 10vw;*/
-	/* text-decoration-line: underline;
+	text-decoration-line: underline;
 	text-decoration-style: dotted;
-	text-underline-position: under; */
+	text-underline-position: under;
 }
 
 p.active, .q:hover{
 	/* transform: skewY(0); */
 	/* background: rgba(255,228,0,1); */
-	color: #ff015b;
+	color: #fe043c;
 }
 
 p.answer{
@@ -314,7 +445,25 @@ br{
 	line-height: 56px;
 }
 
+div.flowl{
+	margin: 10px 30px;
+	float: left;
+}
+
 @media only screen and (max-device-width : 700px){
+	div.flowl{
+		width: 100%;
+	}
+	div.half{
+		min-width: 100%;
+	}
+	img.salon{
+		height: 700px;
+		width: auto;
+	}
+	.person{
+		max-width: 70%;
+	}
 	p.s{
 		max-width: 70%;
 	}
@@ -322,6 +471,7 @@ br{
 		line-height: 90px;
 	}
 	input{
+		max-width: 100%;
 		font-size: 40px;
 	}
 	div.third{
@@ -330,6 +480,7 @@ br{
 	}
 	p{
 		/* max-width: 96%; */
+		/* float: left; */
 		font-size: 32px;
 		line-height: 48px;
 	}
@@ -337,9 +488,9 @@ br{
 		font-size: 42px;
 		line-height:48px;
 	}
-	.plashk{
+	/* .plashk{
 		max-width: 100%;
-	}
+	} */
 	.button{
 		max-width: 60%;
 		font-size: 30px;
@@ -366,12 +517,21 @@ br{
 }
 
 @media only screen and (min-device-width : 701px){
+	div.flowl{
+		width: 500px;
+	}
+	div.half{
+		min-width: 50%;
+	}
+	.person{
+		width: 340px;
+	}
 	div.third{
 		max-width: 410px;
 	}
-	.plashk{
-		max-width: 60%;
-	}
+	/* .plashk{
+		max-width: 600px;
+	} */
 	h3{
 		max-width: 540px;
 	}
