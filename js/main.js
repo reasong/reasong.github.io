@@ -14,6 +14,15 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+$(window).scroll(function(){
+            if ($(this).scrollTop() > 800) {
+                navigation.style.transform="translateY(0)";
+            } else {
+                navigation.style.transform="translateY(-100px)";
+            }
+});
+
+
 $(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
 
@@ -21,6 +30,7 @@ $(document).on('click', 'a[href^="#"]', function (event) {
         scrollTop: $($.attr(this, 'href')).offset().top
     }, 800);
 });
+
 
 $.fn.isInViewport = function() {
     var elementTop = $(this).offset().top;
