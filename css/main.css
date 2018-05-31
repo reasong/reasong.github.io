@@ -130,8 +130,8 @@ h4{
 }
 
 h3.dop_bottom{
-	font-size: 20px;
-	text-transform: uppercase;
+	/* font-size: 20px; */
+	/* text-transform: uppercase; */
 	padding-bottom: 40px;
 }
 
@@ -354,6 +354,7 @@ div{
 }
 
 .name{
+	position: relative;
 	padding-top: 2vh;
 	padding-bottom: 100px;
 	/* padding-top: 80px; */
@@ -419,6 +420,7 @@ input:focus::-webkit-input-placeholder {
 .half{
 	float: left;
 	min-width: 50%;
+	padding-bottom: 60px;
 	/* justify-content: flex-start; */
 	/* display: inline-flex; */
 	/* position: relative; */
@@ -464,8 +466,8 @@ input:focus::-webkit-input-placeholder {
 h3{
 	padding: 20px 60px;
 	font-family: "Bold";
-	font-size: 26px;
-	line-height: 34px;
+	font-size: 24px;
+	line-height: 36px;
 	/* max-width: 540px; */
 	text-align: left;
 	/* float: left; */
@@ -494,6 +496,13 @@ h2{
 	line-height: 46px;
 	/* max-width: 560px; */
 	/* float: left; */
+}
+
+.middle{
+	width: 100%;
+	position: absolute;
+	top: 30%;
+	transform: translateY(-30%);
 }
 
 p{
@@ -566,6 +575,7 @@ div.flowl{
 }
 
 .column{
+	/* position: relative; */
 	/* display: flex;
 	flex-wrap: wrap; */
 	margin: auto;
@@ -656,9 +666,9 @@ div.flowl{
 	} */
 }
 
-/* .third{
-	float: left;
-} */
+.third{
+	padding-bottom: 60px;
+}
 
 @media only screen and (min-device-width : 701px){
 	.three{
