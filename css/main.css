@@ -1,6 +1,6 @@
 *{
 	box-sizing: border-box;
-	-webkit-transition-property: all;
+	-webkit-transition-property: transform, opacity, color, background-color;
 	-webkit-transition-duration: 0.7s;
 	-webkit-transition-timing-function: ease;
 	margin: 0;
@@ -8,6 +8,10 @@
 	/* text-align: center;
 	font-size: 80px; */
 	/* cursor: url("pctrs/cursor.png"), pointer; */
+}
+
+#fotorama{
+	margin-top: 60px;
 }
 
 @font-face {
@@ -55,7 +59,7 @@ a{
 	text-transform: uppercase;
 	/* letter-spacing: 1px; */
 	position: relative;
-	padding-top: 20px;
+	padding: 20px 0;
 	color: black;
 	padding-right: 3vw;
 	font-family: "Bold";
@@ -147,7 +151,7 @@ h3.dop_bottom{
 }
 
 span{
-	font-family: "Bold";
+	font-family: "bold";
 	/* font-size: 1em; */
 	/* color: #fe043c; */
 }
@@ -312,6 +316,16 @@ img.salon{
 	max-height: 400px;
 	width: auto;
 } */
+.press{
+	pointer-events: none;
+	opacity: 0.5;
+	font-size: 16px;
+	line-height: 24px;
+	float: none;
+	padding-top: 50px;
+	padding-bottom: 30px;
+	/* width: 100%; */
+}
 
 .button{
 	background: rgba(255,255,255,0.5);
@@ -322,14 +336,13 @@ img.salon{
 	border: 3px dotted #fe043c;
 	/* border-radius: 100px; */
 	color: #fe043c;
-	padding: 30px 30px;
+	padding: 30px 60px;
 	text-align: center;
 	text-decoration: none;
 	font-size: 20px;
-	margin: 20px 60px;
-	margin-bottom: 60px;
-	margin-top: 40px;
-	float: left;
+	line-height: 30px;
+	margin: 40px 60px;
+	/* float: left; */
 	cursor: pointer;
 }
 
@@ -353,6 +366,13 @@ div{
 	/* max-width: 1300px; */
 }
 
+#footer{
+	padding-bottom: 80px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
 .name{
 	position: relative;
 	padding-top: 2vh;
@@ -363,8 +383,9 @@ div{
 }
 
 .inject{
-	padding-top: 120px;
-	padding-bottom: 400px;
+	padding: 100px 0;
+	/* padding-top: 120px;
+	padding-bottom: 400px; */
 	/* padding-bottom: 80px; */
 	/* background: #b0dece; */
 	/* padding-top: 20px; */
@@ -396,6 +417,7 @@ input{
 }
 
 input:focus{
+	border-bottom: 2px solid #ff015b;
 	color: #fe043c;
 }
 input::-webkit-input-placeholder {
@@ -410,7 +432,7 @@ input:focus::-webkit-input-placeholder {
 }
 
 .double{
-	padding: 60px 0;
+	padding: 20px 0;
 	display: flex;
 	flex-wrap: wrap;
 	align-content: flex-start;
@@ -420,7 +442,7 @@ input:focus::-webkit-input-placeholder {
 .half{
 	float: left;
 	min-width: 50%;
-	padding-bottom: 60px;
+	padding: 40px 0;
 	/* justify-content: flex-start; */
 	/* display: inline-flex; */
 	/* position: relative; */
@@ -439,8 +461,7 @@ input:focus::-webkit-input-placeholder {
 } */
 
 .buster{
-	padding-top: 80px;
-	padding-bottom: 180px;
+	padding: 80px 0;
 	height: auto;
 	/* padding-bottom: 40px; */
 	/* background: #9cffd9; */
@@ -466,7 +487,7 @@ input:focus::-webkit-input-placeholder {
 h3{
 	padding: 20px 60px;
 	font-family: "Bold";
-	font-size: 24px;
+	font-size: 28px;
 	line-height: 36px;
 	/* max-width: 540px; */
 	text-align: left;
@@ -509,6 +530,7 @@ p{
 	/* background: #8cb3fa; */
 	/* opacity: 0.5; */
 	padding: 10px 60px;
+	padding-top: 5px;
 	/* padding-top: 20px; */
 	text-align: left;
 	font-family: "Light";
@@ -575,6 +597,7 @@ div.flowl{
 }
 
 .column{
+	padding: 40px 0;
 	/* position: relative; */
 	/* display: flex;
 	flex-wrap: wrap; */
@@ -585,7 +608,27 @@ div.flowl{
 	transform: translateY(-80px);
 }
 
+#pop-up{
+	padding-top: 30px;
+	box-shadow: 1px 1px 30px #fe043c;
+	display: none;
+	/* border: 1px solid #fe043c; */
+	/* visibility: hidden; */
+	z-index: 3;
+	/* margin: auto; */
+	position: fixed;
+	margin: 10% 50%;
+	/* transform: translateY(10%); */
+	transform: translateX(-50%);
+	background: white;
+}
+
 @media only screen and (max-device-width : 700px){
+	.press{
+		font-size: 24px;
+		line-height: 34px;
+		/* width: 100%; */
+	}
 	/* .person{
 		width: 300px;
 	} */
@@ -628,22 +671,17 @@ div.flowl{
 	p{
 		/* max-width: 96%; */
 		/* float: left; */
-		font-size: 32px;
-		line-height: 48px;
-	}
-	p.answer{
-		font-size: 42px;
-		line-height:48px;
-	}
-	/* .plashk{
-		max-width: 100%;
-	} */
-	.button{
-		max-width: 60%;
 		font-size: 30px;
-		line-height: 36px;
+		line-height: 50px;
+	}
+	.button{
+		width: 70%;
+		font-size: 30px;
+		line-height: 50px;
 	}
 	h3{
+		font-size: 48px;
+		line-height: 68px;
 		max-width: 100%;
 	}
 	h4{
@@ -667,7 +705,13 @@ div.flowl{
 }
 
 .third{
+	padding-top: 30px;
 	padding-bottom: 60px;
+}
+
+#ph{
+	padding-top: 30px;
+	color: #fe043c;
 }
 
 @media only screen and (min-device-width : 701px){
@@ -718,9 +762,6 @@ div.flowl{
 		max-width: 680px;
 	}
 	p{
-		max-width: 680px;
-	}
-	p.answer{
 		max-width: 680px;
 	}
 }

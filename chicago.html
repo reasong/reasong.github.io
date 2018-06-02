@@ -5,9 +5,11 @@
  	<meta charset="utf-8">
 	<title>Франшиза «СHICAGO»</title>
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/fotorama.js"></script>
   <!-- <script type="text/javascript" src="js/noframework.waypoints.min.js"></script> -->
-	<link rel="icon" type="image/png" href="css/pctrs/fav.png">
+  <link rel="icon" type="image/png" href="css/pctrs/fav.png">
 	<link rel="stylesheet" href="css/main.css" type="text/css">
+  <link rel="stylesheet" href="css/fotorama.css">
 </head>
 <body>
 <section id="navigation">
@@ -32,19 +34,26 @@
 <a href="#faq">
 Вопросы
 </a>
-<a href="#sendy">
+<a id="sendy">
 Оставить заявку
 </a>
 </section>
-<!-- <div id="pctrs">
-<div id="ni">
+<div id="pop-up">
+<form>
+<input placeholder="Ваше Имя" type="text" required="">
+<input placeholder="Телефон" type="text" required="">
+<input placeholder="Почта" type="text" required="">
+<a class="button">Отправить</a>
+</form>
+<p class="press">
+Нажимая на кнопку, вы даёте согласие на обработку персональных данных
+</p>
 </div>
-</div> -->
 <div id="main">
 <div class="name" id="franchise">
 <div class="middle">
 <div class="column">
-<h3 id="franch">
+<h3>
 Франшиза «Чикаго»
 </h3>
 <h2>
@@ -93,7 +102,7 @@
 Инвестируйте в&nbspаренду помещения, капитальный ремонт, оборудование и&nbspнайм персонала.<br>
 Создайте один из&nbspлучших салонов красоты в&nbspгороде, в&nbspкоторый будут приезжать клиенты из&nbspдругих районов.<br>
 Так вы&nbspбудете зарабатывать от<span>&nbsp350-800&nbspтысяч&nbspруб. в&nbspмесяц.</span><br>
-Паушальный взнос —<span>&nbsp500&nbsp000&nbspруб</span>.
+Паушальный взнос&nbsp—<span>500&nbsp000&nbspруб</span>.
 </p>
 </div>
 <div class="half">
@@ -102,7 +111,7 @@
 </h3>
 <p>
 Инвестируйте только в&nbspкосметический ремонт и&nbspувеличиваете прибыльность уже&nbspсуществующего бизнеса.<br>
-Паушальный взнос —<span>&nbsp500&nbsp000&nbspруб</span>.
+Паушальный взнос&nbsp—<span>500&nbsp000&nbspруб</span>.
 </p>
 </div>
 </div>
@@ -155,7 +164,7 @@
 </p>
 </div>
 </div>
-<div class="inject">
+<div class="buster">
 <div class="column">
 <h2>
 Сравнение с&nbspдругими франшизами на&nbspрынке
@@ -351,7 +360,7 @@
 За<span>&nbsp8&nbspлет</span> мы создали свою бизнес-модель и&nbspулучшили каждый её аспект.<br>
 Мы уже запустили сеть салонов в&nbspСанкт-Петербурге, научились привлекать и&nbspудерживать клиентов, решили вопросы управления бюджетами и&nbspперсоналом и&nbspпостроили систему обучения сотрудников. <br>
 <span>
-Покупая франшизу, вы получаете весь наш опыт.<br>
+Покупая франшизу, вы получаете весь наш опыт<br>
 </span>
 Мы ориентируемся на&nbspклиентов с&nbspвысоким доходом, поэтому наши услуги стоят дороже, чем в среднем по рынку.
 </p>
@@ -371,7 +380,6 @@
 <div class="double">
 <div class="column">
 <!-- <div class="double"> -->
-
 <div class="half">
 <img src="css/pctrs/imgs/hold.png">
 <!-- </div> -->
@@ -388,8 +396,8 @@
 </div>
 </div>
 </div>
-<div class="inject" id="salons">
-<div class="column">
+<div >
+<div class="column inject" id="salons">
 <h2>
 Как будет выглядеть салон
 </h2>
@@ -397,7 +405,15 @@
 Мы предпочитаем уникальный стиль серийным одинаковым салонам, поэтому все салоны «Чикаго» отличаются друг от&nbspдруга.<br>
 Мы привлекаем дизайнеров интерьеров для&nbspдетальной проработки каждого проекта и&nbspсоздаем пространства, в&nbspкоторых уютно и&nbspхорошо.
 </p>
-<div id="gallery">
+<div id="fotorama" class="fotorama" data-width="100%"  data-ratio="1260/600" >
+  <img src="css/pctrs/salon/zoon_1.jpg">
+  <img src="css/pctrs/salon/zoon_2.jpg">
+  <img src="css/pctrs/salon/zoon_3.jpg">
+  <img src="css/pctrs/salon/zoon_4.jpg">
+  <img src="css/pctrs/salon/zoon_5.jpg">
+  <img src="css/pctrs/salon/zoon_6.jpg">
+</div>
+<!-- <div id="gallery">
 <div>
 <img class="salon" src="css/pctrs/salon/zoon_1.jpg"></img>
 </div>
@@ -416,7 +432,7 @@
 <div>
 <img class="salon" src="css/pctrs/salon/zoon_6.jpg"></img>
 </div>
-</div>
+</div> -->
 </div>
 </div>
 <div class="double">
@@ -530,7 +546,7 @@
 </p>
 </div>
 </div>
-<div class="name" id="send">
+<div class="inject" id="send">
 <div class="column">
 <h2>
 Запустите прибыльный бизнес в&nbspсвоем городе
@@ -541,9 +557,12 @@
 <input placeholder="Почта" type="text" required="">
 <a class="button">Отправить</a>
 </form>
+<p class="press">
+Нажимая на&nbspкнопку, вы даёте согласие на&nbspобработку персональных данных
+</p>
 </div>
 </div>
-<div class="inject" id="seven">
+<div class="double" id="seven">
 <div class="column">
 <div class="half">
 <p>
@@ -559,7 +578,7 @@
 </div>
 </div>
 </div>
-<div class="inject">
+<div class="buster">
 <div class="column">
 <h2>
 Наша команда
@@ -593,7 +612,7 @@
 </p>
 </div>
 <div class="person">
-<img src="css/pctrs/persons/1.png"></img>
+<img src="css/pctrs/persons/petr.png"></img>
 <h3>
 Петр
 </h3>
@@ -602,7 +621,7 @@
 </p>
 </div>
 <div class="person">
-<img src="css/pctrs/persons/1.png"></img>
+<img src="css/pctrs/persons/ekaterina.png"></img>
 <h3>
 Екатерина
 </h3>
@@ -612,6 +631,25 @@
 </div>
 </div>
 </div>
+</div>
+<div class="column" id="footer">
+<a target="_blank" href="https://www.instagram.com/salon_chicago/">
+<img src="css/pctrs/social/instagram.png"></img>
+</a>
+<a target="_blank" href="https://twitter.com/salon_chicago">
+<img src="css/pctrs/social/twitter.png"></img>
+</a>
+<!-- <p id="ph">
+<span>
+424-67-57
+</span>
+</p> -->
+<a target="_blank" href="https://www.facebook.com/beautysalonchicago">
+<img src="css/pctrs/social/facebook.png"></img>
+</a>
+<a target="_blank" href="https://vk.com/salon_chicago">
+<img src="css/pctrs/social/vk.png"></img>
+</a>
 </div>
 </div>
 </body>

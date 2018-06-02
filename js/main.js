@@ -22,15 +22,24 @@ $(window).scroll(function(){
             }
 });
 
+$('#sendy').click(function(){
+    $('#pop-up').fadeIn(500);
+});
+
+$(window).mouseup(function(e) {
+    var container = $("#pop-up");
+    if (!container.is(e.target) && container.has(e.target).length === 0)
+    {
+        container.hide();
+    }
+});
 
 $(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
-
     $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top
-    }, 800);
+    }, 500);
 });
-
 
 $.fn.isInViewport = function() {
     var elementTop = $(this).offset().top;
