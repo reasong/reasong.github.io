@@ -1,6 +1,6 @@
 *{
 	box-sizing: border-box;
-	-webkit-transition-property: transform, opacity, color, background-color;
+	-webkit-transition-property: transform, opacity, color, background-color, max-height;
 	-webkit-transition-duration: 0.7s;
 	-webkit-transition-timing-function: ease;
 	margin: 0;
