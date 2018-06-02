@@ -218,14 +218,14 @@ span{
 }
 
 #best{
-	background-image: url("pctrs/imgs/best.png");
+	background-image: url("pctrs/imgs/best.jpg");
 	background-repeat: no-repeat;
-	background-size: 50%;
+	background-size: 40%;
 	background-position: right bottom;
 }
 
 #begin{
-	background-image: url("pctrs/imgs/begin.png");
+	background-image: url("pctrs/imgs/begin.jpg");
 	background-repeat: no-repeat;
 	background-position: right bottom;
 	transform: skewY(-4.5deg);
@@ -256,7 +256,7 @@ span{
 }
 
 #target{
-	background-image: url("pctrs/imgs/target.png");
+	background-image: url("pctrs/imgs/target.jpg");
 	background-repeat: no-repeat;
 	background-position: right bottom;
 	transform: translateY(200px);
@@ -281,11 +281,17 @@ span{
 	/* color: white; */
 	background: linear-gradient(-45deg, #ff0049, #ff87f2);
 }
+
+#sra{
+	background-image: url("pctrs/imgs/sra.jpg");
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+
 #how{
-	background: linear-gradient(-45deg, #ffe400, #fffd31);
 	background-image: url("pctrs/imgs/fra.png");
 	background-repeat: no-repeat;
-	/* background-size: 60%; */
+	background-size: 30%;
 	background-position: right bottom;
 }
 
