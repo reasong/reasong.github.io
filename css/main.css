@@ -691,6 +691,12 @@ div.flowl{
 		max-width: 100%;
 		/* line-height: 10px; */
 	}
+	p.answer{
+		/* max-width: 96%; */
+		/* float: left; */
+		font-size: 46px;
+		line-height: 60px;
+	}
 	p{
 		/* max-width: 96%; */
 		/* float: left; */
