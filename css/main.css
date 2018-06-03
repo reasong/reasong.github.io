@@ -646,7 +646,7 @@ div.flowl{
 }
 
 
-@media only screen and (max-device-width : 700px){
+@media only screen and (max-device-width : 721px){
 	#pop-up2{
 		width: 80%;
 		/* height: 30%; */
@@ -753,7 +753,7 @@ div.flowl{
 	color: #fe043c;
 }
 
-@media only screen and (min-device-width : 701px){
+@media only screen and (min-device-width : 722px){
 	.three{
 		max-height: 60%;
 	}
