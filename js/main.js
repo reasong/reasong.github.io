@@ -34,6 +34,19 @@ $(window).mouseup(function(e) {
     }
 });
 
+$('.out').click(function(){
+    $('#pop-up').fadeOut(100);
+    $('#pop-up2').fadeIn(500);
+});
+
+$(window).mouseup(function(e) {
+    var container = $("#pop-up2");
+    if (!container.is(e.target) && container.has(e.target).length === 0)
+    {
+        container.hide();
+    }
+});
+
 $(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
     $('html, body').animate({
