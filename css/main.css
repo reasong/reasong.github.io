@@ -628,6 +628,23 @@ div.flowl{
 	transform: translateX(-50%);
 	background: white;
 }
+#pop-up2{
+	min-width: 50%;
+	min-height: 50%;
+	padding: 60px 0;
+	box-shadow: 1px 1px 30px #fe043c;
+	display: none;
+	/* border: 1px solid #fe043c; */
+	/* visibility: hidden; */
+	z-index: 2;
+	/* margin: auto; */
+	position: fixed;
+	margin: 10% 50%;
+	/* transform: translateY(10%); */
+	transform: translateX(-50%);
+	background: white;
+}
+
 
 @media only screen and (max-device-width : 700px){
 	.press{
