@@ -136,7 +136,7 @@ h4{
 h3.dop_bottom{
 	/* font-size: 20px; */
 	/* text-transform: uppercase; */
-	padding-bottom: 40px;
+	padding-bottom: 30px;
 }
 
 #ni{
@@ -150,8 +150,13 @@ h3.dop_bottom{
 	background-position: right bottom;
 }
 
+p.sp{
+	font-family: "Bold";
+	padding-bottom: 0px;
+}
+
 span{
-	font-family: "bold";
+	font-family: "Bold";
 	/* font-size: 1em; */
 	/* color: #fe043c; */
 }
@@ -536,12 +541,12 @@ p{
 	/* background: #8cb3fa; */
 	/* opacity: 0.5; */
 	padding: 10px 60px;
-	padding-top: 5px;
+	/* padding-top: 5px; */
 	/* padding-top: 20px; */
 	text-align: left;
 	font-family: "Light";
 	font-size: 21px;
-	line-height: 27px;
+	line-height: 28px;
 	/* max-width: 94%; */
 	/* float: left; */
 }
