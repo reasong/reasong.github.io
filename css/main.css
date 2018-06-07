@@ -701,7 +701,10 @@ div.flowl{
 }
 
 
-@media only screen and (max-device-width : 721px){
+@media screen and (max-device-width : 721px){
+	br{
+		line-height: 0;
+	}
 	#tel{
 		position: absolute;
 		top: 60px;
@@ -808,7 +811,7 @@ div.flowl{
 	color: #fe043c;
 } */
 
-@media only screen and (min-device-width : 722px){
+@media screen and (min-device-width : 722px){
 	#tel{
 		display: none;
 	}
