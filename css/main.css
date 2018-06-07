@@ -104,7 +104,7 @@ div.third{
 }
 
 div.grey{
-	background: #f7f7f7;
+	background: #fafafa;
 }
 
 h4{
@@ -125,7 +125,7 @@ h3.dop_bottom{
 }
 
 #ni{
-	background: #f7f7f7;
+	background: #fafafa;
 	right: 0;
 	/* position: absolute; */
 	width: 100%;
@@ -143,7 +143,7 @@ p.sp{
 span{
 	font-family: "Bold";
 	/* font-size: 1em; */
-	/* color: #fe043c; */
+	color: #fe043c;
 }
 
 /* p span{
@@ -173,13 +173,13 @@ span{
 }
 
 #money{
-	background: #f7f7f7;
+	background: #fafafa;
 }
 /* #arrows{
-	background: #f7f7f7;
+	background: #fafafa;
 } */
 #franchise{
-	background: #f7f7f7;
+	background: #fafafa;
 	background-image: url("pctrs/imgs/ni.png");
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -536,6 +536,10 @@ h2{
 	transform: translateY(-30%);
 }
 
+.tit{
+	width: 60%;
+}
+
 p{
 	/* background: #8cb3fa; */
 	/* opacity: 0.5; */
@@ -578,7 +582,8 @@ div.copyright{
 	margin-top: 200px;
 }
 
-p.cpr{
+.cpr{
+	font-family: "Light";
 	opacity: 0.5;
 	padding-left: 60px;
 	width: 100%;
@@ -608,9 +613,9 @@ p.answer{
 	min-height: 0;
 }
 
-/* br{
-	line-height: 2.58em;
-} */
+br{
+	line-height: 2em;
+}
 
 div.flowl{
 	margin: 10px 30px;
@@ -623,6 +628,24 @@ div.flowl{
 	/* display: flex;
 	flex-wrap: wrap; */
 	margin: auto;
+}
+
+#ph{
+	font-size: 0.9vw;
+	pointer-events: none;
+	padding-right: 60px;
+	padding-left: 60px;
+	padding-top: 10px;
+	padding-bottom: 30px;
+	/* border-bottom: 1px solid rgba(0,0,0,0.1); */
+	position: fixed;
+	height: 70px;
+	width: 100vw;
+	/* background: white; */
+	opacity: 1;
+	/* background: linear-gradient(to right, rgba(255,255,255, 1), rgba(255,255,255,0)); */
+	z-index: 4;
+	/* transform: translateY(-80px); */
 }
 
 #navigation{
@@ -713,6 +736,9 @@ div.flowl{
 	#navigation{
 		visibility: hidden;
 	}
+	#ph{
+		visibility: hidden;
+	}
 	#franch{
 		visibility: visible;
 	}
@@ -732,9 +758,9 @@ div.flowl{
 	p.s{
 		max-width: 80%;
 	}
-	br{
+	/* br{
 		line-height: 90px;
-	}
+	} */
 	input{
 		max-width: 100%;
 		font-size: 40px;
@@ -777,10 +803,10 @@ div.flowl{
 	padding-bottom: 60px;
 }
 
-#ph{
+/* #ph{
 	padding-top: 30px;
 	color: #fe043c;
-}
+} */
 
 @media only screen and (min-device-width : 722px){
 	#tel{
@@ -799,6 +825,9 @@ div.flowl{
 		max-width: 1260px;
 	} */
 	#navigation{
+		visibility: visible;
+	}
+	#ph{
 		visibility: visible;
 	}
 	#franch{
