@@ -6,9 +6,11 @@ for (i = 0; i < acc.length; i++) {
     this.classList.toggle("active");
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight){
+      $('html, body').animate({scrollTop: '-='+panel.style.maxHeight+"px"}, 700);
       panel.style.maxHeight = null;
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
+      $('html, body').animate({scrollTop: '+='+panel.style.maxHeight+"px"}, 700);
       // panel.style.display = "block";
     }
   });
@@ -37,6 +39,11 @@ $(window).mouseup(function(e) {
 $('.out').click(function(){
     $('#pop-up').fadeOut(100);
     $('#pop-up2').fadeIn(500);
+});
+
+$('.close').click(function(){
+    $('#pop-up').fadeOut(100);
+    $('#pop-up2').fadeOut(100);
 });
 
 $(window).mouseup(function(e) {
