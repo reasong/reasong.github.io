@@ -383,7 +383,7 @@ h3{
 	padding-bottom: 10px;
 	font-family: "Bold";
 	font-size: calc( (100vw - 480px)/(1280 - 480) * (32 - 24) + 24px);
-	line-height: calc( (100vw - 480px)/(1280 - 480) * (32 - 24) + 24px);
+	line-height: calc( (100vw - 480px)/(1280 - 480) * (36 - 28) + 28px);
 }
 
 h1{
@@ -424,7 +424,7 @@ p{
 	padding: 10px 60px;
 	font-family: "Light";
 	font-size: calc( (100vw - 700px)/(1280 - 700) * (21 - 20) + 20px);
-	line-height: calc( (100vw - 700px)/(1280 - 700) * (22 - 20) + 20px);
+	line-height: calc( (100vw - 700px)/(1280 - 700) * (24 - 22) + 22px);
 }
 
 p.d{
